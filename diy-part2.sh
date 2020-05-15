@@ -10,3 +10,6 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+#
+sed -i '/^config internal themes/ a\        option Bootstrap "/luci-static/bootstrap"\n        option Argon_Dark "/luci-static/argon_dark"' feeds/luci/modules/luci-base/root/etc/config/luci
+sed -i 's/KERNEL_PATCHVER:=4.9/KERNEL_PATCHVER:=4.14/g' target/linux/ar71xx/Makefile
