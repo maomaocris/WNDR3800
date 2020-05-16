@@ -41,3 +41,7 @@ cd package/lean
 #svn checkout https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-ssr-python-pro-server
 svn checkout https://github.com/Lienol/openwrt-package/trunk/lienol/luci-theme-argon-dark-mod
 cd ../..
+#
+rm ./tmp -rf
+./scripts/feeds update -a && ./scripts/feeds install -a
+#
