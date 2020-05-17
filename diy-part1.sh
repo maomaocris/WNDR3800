@@ -26,4 +26,6 @@ git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
 svn checkout https://github.com/Lienol/openwrt-package/trunk/lienol/luci-theme-argon-dark-mod
 cd ../..
 #
+./scripts/feeds update -a && ./scripts/feeds install -a
+rm ./tmp -rf
 #
