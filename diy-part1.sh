@@ -17,6 +17,7 @@
 #SSR+
 echo "src-git helloworld https://github.com/fw876/helloworld" >> feeds.conf.default
 #
+#
 cd package/lean
 #smartdns
 git clone https://github.com/pymumu/smartdns.git
